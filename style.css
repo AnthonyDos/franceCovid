@@ -1,0 +1,42 @@
+.header-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.header-h1{
+    text-align: center;
+}
+.table{
+    border: 5px solid rgb(180, 169, 169);
+    margin: auto;
+}
+.title{
+    border-bottom: 2px solid darkslategray;
+}
+.headerDep{
+    display: flex;
+    background-color: #98b2c8;
+}
+.headerDepartement{
+    width: 30%;
+}
+.paragrapheHeader{
+    margin: auto;
+    font-size: xx-large;
+}
+.titleDepartement{
+    text-align: center;
+}
+.blocDepartement{
+    border: 2px solid;
+    width: 50%;
+    margin: auto;
+}
+.blocTextDepartement{
+    width: fit-content;
+    margin: auto;
+}
+.footerDepartement, .footerHome{
+    height: 60px;
+    background-color: #98b2c8;
+}
