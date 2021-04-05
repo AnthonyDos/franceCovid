@@ -2,15 +2,12 @@ let containerDepartement = document.getElementById("container");
 
 function getNom(){
 	const param = window.location.search
-	const name = param.replace("?Departement=","") //je remplace le document par celui qui est fourni avec le nom du département
-    //const name = param.replace("?departement","")
+	const name = param.replace("?Departement=","") 
 	if (!name) throw new Error ('il manque le name')
 	return name
 }
 fetch(`https://coronavirusapi-france.now.sh/LiveDataByDepartement?Departement=${getNom()}`)
 .then(response => response.json())
-	//console.log(response)
-   // return response.json()
 .then(response =>{
     function afficherLesResultats(response) {
         console.log(response.LiveDataByDepartement[0].nom);
